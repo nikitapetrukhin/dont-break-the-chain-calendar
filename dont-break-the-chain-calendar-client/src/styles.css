@@ -1,0 +1,91 @@
+:root {
+  --primary: #0000ff;
+  --secondary: #55ff00;
+  --light-gray: #cccccc;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  border-radius: 300px; /* Радиус скругления */
+  border: 1px solid var(--secondary); /* Параметры рамки */
+  box-shadow: 0 0 7px var(--light-gray); /* Параметры тени */
+}
+
+.ui-link {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.ui-title {
+  font-family: Helvetica;
+}
+
+.ui-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5px;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.ui-textfield {
+  padding: 12px 10px;
+  border-radius: 3px;
+  border: 1px solid var(--light-gray);
+  font-size: 16px;
+}
+
+.ui-button {
+  background-color: var(--primary);
+  color: white;
+  border: 0;
+  padding: 15px 20px;
+  min-width: 150px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 200ms ease-out;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ui-button-add {
+  background-color: rgb(201, 199, 199);
+  color: black;
+  border: 0;
+  padding: 10px 15px;
+  min-width: 100px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 200ms ease-out;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ui-button:hover {
+  opacity: 0.8;
+}
+
+.ui-button:disabled {
+  opacity: 0.4;
+  cursor: disabled;
+}
+
+[class^="ui-"] {
+  margin: 10px;
+}
+
+.item-info {
+  margin-left: 10px;
+}
+
+.item-quantity {
+  display: flex;
+  margin-bottom: 50px;
+}
